@@ -1,23 +1,31 @@
+import Link from 'next/link'
 import React from 'react'
 
-function NFTCard({url, price, title}: {
+function NFTCard({id, url, price, title}: {
+    id: string,
     url: string,
     price: string,
     title: string
 }) {
   return (
+    <Link href={`/asset/${id}`}
+    className='cursor-pointer mx-2'
+    >
     <div
-    className='border rounded-sm h-56 w-44 '
+    className='border rounded-xl h-58 w-44 '
     >
         <div className="">
-        <img src={url} className='h-full w-full'/>
+        <img src={url} className='h-full w-full rounded-md'/>
         </div>
-        <div className="px-4 mt-2">
-         <strong className='text-xl'>
+        <div className="flex flex-col w-full items-start px-2 pt-2 justify-between">
+            <span className='text-sm'>{title}</span>
+         
+         <span className='text-sm'>
             {price}
-        </strong> 
+        </span> 
         </div>
     </div>
+    </Link>
   )
 }
 

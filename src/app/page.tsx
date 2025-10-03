@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import { NFT } from '@/example';
 import NFTCard from '@/components/NFTCard';
 
@@ -8,9 +7,7 @@ import NFTCard from '@/components/NFTCard';
 function Home() {
   return (
     <>
-    
-        <Navbar/>
-        <div className="min-h-screen w-full py-20">
+    <div className="min-h-screen w-full py-20">
           <h1 className='mt-3 text-xl px-10'>Trending Now</h1>
           
           <div className="lg:grid lg:grid-cols-6 flex flex-wrap items-center justify-center gap-4 px-10 mt-8">
@@ -19,7 +16,7 @@ function Home() {
               }
           </div>
         
-        </div>
+    </div>
     </>
   )
 }

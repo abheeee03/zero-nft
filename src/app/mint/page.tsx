@@ -34,7 +34,8 @@ function MintPage() {
   }
 
   return (
-    <div className="h-screen w-full flex items-center justify-between flex-wrap px-2">
+    <>
+    <div className="h-screen w-full flex items-center justify-between">
         <div className="h-screen w-full flex items-center justify-center">
           <div className="h-90 w-90 border rounded-xl flex items-center justify-center">
              { !fileUrl && <Button
@@ -73,6 +74,7 @@ function MintPage() {
             </form>
         </div>
     </div>
+              </>
   )
 }
 

@@ -19,7 +19,6 @@ type NftObject = {
 function NFTPage(nft: NftObject) {
   return (
     <>
-    <Navbar/>
     <div className='min-h-screen w-full py-20 md:px-5'>
         <div className="h-full w-full flex items-center justify-between md:flex-nowrap flex-wrap md:gap-0 gap-10">
             <div className="h-full w-full px-10 flex items-center justify-center mt-5">
